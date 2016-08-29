@@ -12,7 +12,7 @@
         var directive = {
             bindToController: true,
             templateUrl: 'components/directives/menu/menu.html',
-            controller: menuCtrl,
+            controller: MenuCtrl,
             controllerAs: 'vm',
             link: link,
             restrict: 'AE',
@@ -26,7 +26,7 @@
     }
 
     /* @ngInject */
-    function menuCtrl(dataService) {
+    function MenuCtrl(dataService) {
         var vm = this;
 
         dataService.getData()
