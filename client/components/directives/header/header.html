@@ -1,0 +1,37 @@
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container topbar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Toggle Navigation</span>
+                <i class="fa fa-bars"></i>
+            </button>
+            <a ui-sref="root.home" class="navbar-brand navbar-logo navbar-logo-bigger">
+                <h1>Municipalidad Villa Maria</h1>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-hide="vm.isLoggedIn()">
+                    <a ui-sref="root.home.login">SignIn</a>
+                    <p>{{::vm.errors}}</p>
+                </li>
+                <li ng-show="vm.isLoggedIn()">
+                    <a ui-sref="root.home.videos">Videos List</a>
+                </li>
+
+                <li class="dropdown" ng-show="vm.isLoggedIn()">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        <span class="fa fa-user"></span>
+                        {{::vm.getCurrentUser().username}}
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="" ng-click="vm.logout()">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#
+# use --no-verify flag to avoid this script
+PATH=$HOME/.npm-packages/bin\:/usr/local/bin\:$PATH ; export PATH
+echo "Running Grunt Lint..."
+
+grunt lint
+RESULT1=$?
+
+[ $RESULT1 -ne 0 ] && exit 1
+
+echo "Running Grunt test..."
+
+grunt test
+RESULT2=$?
+
+[ $RESULT2 -ne 0 ] && exit 1
+
+exit 0
