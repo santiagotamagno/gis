@@ -9,6 +9,7 @@
             'ui.bootstrap',
             'GisApp.usersService',
             'GisApp.ngHeader',
-            'GisApp.appConstants'
+            'GisApp.appConstants',
+            'GisApp.ngMaps'
         ]);
 })();
