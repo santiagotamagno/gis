@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Servicios",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, porro?",
+    "icon": "fa-server",
+    "sections": [
+      {
+        "title": "Wifi-free",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
+        "icon": "fa-wifi",
+        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml"
+      },
+      {
+        "title": "Bancos",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
+        "icon": "fa-money",
+        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml"
+      }
+    ]
+  },
+  {
+    "title": "Salud",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, porro?",
+    "icon": "fa-heart",
+    "sections": [
+      {
+        "title": "Hospitales",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
+        "icon": "fa-wifi",
+        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml"
+      },
+      {
+        "title": "Farmacias",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
+        "icon": "fa-medkit",
+        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml"
+      }
+    ]
+  }
+
+]

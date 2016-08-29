@@ -5,10 +5,16 @@
         .module('GisApp')
         .controller('MainCtrl', MainCtrl);
 
-    MainCtrl.$inject = [];
+    // MainCtrl.$inject = ['dataService'];
 
     /* @ngInject */
     function MainCtrl() {
         var vm = this;
+
+        activate();
+
+        function activate() {
+
+        }
     }
 })();

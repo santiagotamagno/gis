@@ -10,6 +10,7 @@
             'GisApp.usersService',
             'GisApp.ngHeader',
             'GisApp.appConstants',
-            'GisApp.ngMaps'
+            'GisApp.ngMaps',
+            'GisApp.menu'
         ]);
 })();
