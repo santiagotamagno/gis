@@ -232,7 +232,7 @@ module.exports = function(grunt) {
                 '/es5-shim/',
                 '/bootstrap.css/',
                 '/font-awesome.css/',
-                '/videogular.css' ]
+                '/ngmap/']
           }
         },
 
