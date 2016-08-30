@@ -380,7 +380,8 @@ module.exports = function(grunt) {
                       'bower_components/**/*',
                       'assets/images/{,*/}*.*',
                       'assets/fonts/**/*', 'index.html',
-                      'mocks/{,*/}*.*'
+                      'mocks/{,*/}*.*',
+                      'kml/{,*/}*.*'
                     ]
                 },
                 {
