@@ -17,6 +17,7 @@
             link: link,
             restrict: 'AE',
             scope: {
+                kml: '='
             }
         };
         return directive;
@@ -29,6 +30,8 @@
     function MenuCtrl(dataService) {
         var vm = this;
 
+        vm.setKml = setKml;
+
         activate();
 
         function activate() {
@@ -36,6 +39,10 @@
                 .then(function (response) {
                     vm.data = response.data;
                 });
+        }
+
+        function setKml(value) {
+            vm.kml = value;
         }
     }
 })();

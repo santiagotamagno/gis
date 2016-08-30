@@ -17,6 +17,7 @@
             restrict: 'AE',
             templateUrl: 'components/directives/ng-maps/ng-maps.html',
             scope: {
+                kml: '='
             }
         };
         return directive;
@@ -24,5 +25,9 @@
 
     /* @ngInject */
     function NgMapsCtrl() {
+        var vm = this;
+
+        //testing @todo delete
+        vm.kml = vm.kml || 'http://googlemaps.github.io/kml-samples/kml/Placemark/placemark.kml';
     }
 })();
