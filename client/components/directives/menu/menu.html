@@ -1,5 +1,5 @@
 <div class="panel-group menu" id="accordion">
-    <div class="panel panel-default" ng-repeat="(key, value) in vm.data">
+    <div class="panel panel-default" ng-repeat="value in vm.data">
         <div class="panel-heading">
             <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#{{$index}}">
@@ -9,10 +9,10 @@
         <div id="{{$index}}" class="panel-collapse collapse in">
             <div class="panel-body">
                 <table class="table">
-                    <tr ng-repeat="(key, value) in value.sections">
+                    <tr ng-repeat="val in value.sections">
                         <td>
-                            <span class="fa {{::value.icon}}"></span>
-                            <a href="">{{::value.title}}</a>
+                            <span class="fa {{::val.icon}}"></span>
+                            <a href="">{{::val.title}}</a>
                         </td>
                     </tr>
                 </table>

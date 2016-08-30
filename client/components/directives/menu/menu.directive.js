@@ -29,9 +29,13 @@
     function MenuCtrl(dataService) {
         var vm = this;
 
-        dataService.getData()
-            .then(function (response) {
-                vm.data = response.data;
-            });
+        activate();
+
+        function activate() {
+            dataService.getData()
+                .then(function (response) {
+                    vm.data = response.data;
+                });
+        }
     }
 })();
