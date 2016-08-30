@@ -22,6 +22,7 @@ module.exports = function(grunt) {
   require('time-grunt')(grunt);
 
   grunt.loadNpmTasks('grunt-ng-constant');
+  grunt.loadNpmTasks('grunt-jsonlint');
 
   // Define the configuration for all the tasks
   grunt
@@ -60,6 +61,14 @@ module.exports = function(grunt) {
             url : 'http://localhost:<%= express.options.port %>'
           }
         },
+
+        //Lint json files
+        jsonlint: {
+          mocks: {
+            src: [ '<%= yeoman.client %>/mocks/*.json' ]
+          }
+        },
+
         watch : {
           injectJS : {
             files : [
@@ -550,6 +559,7 @@ module.exports = function(grunt) {
                   '!<%= yeoman.client %>/app/app.less' ]
             }
           },
+
           // Inject component css into index.html
           css : {
             options : {
@@ -632,6 +642,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['newer:jshint', 'test', 'build']);
 
-  grunt.registerTask('lint', ['jscs:all', 'jscs:app', 'jshint:all']);
+  grunt.registerTask('lint', ['jscs:all', 'jscs:app', 'jshint:all', 'jsonlint:mocks']);
   grunt.registerTask('deploy-prod', ['clean', 'ngconstant:prod', 'lint', 'test:client', 'build']);
 };

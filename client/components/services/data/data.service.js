@@ -12,7 +12,7 @@
         this.getData = getData;
 
         function getData(status) {
-            return $http.get('assets/mocks/data.json');
+            return $http.get('/mocks/data.json');
         }
     }
 })();

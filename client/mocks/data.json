@@ -26,7 +26,7 @@
       {
         "title": "Hospitales",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
-        "icon": "fa-wifi",
+        "icon": "fa-hospital-o",
         "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml"
       },
       {
