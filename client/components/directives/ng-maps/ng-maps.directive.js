@@ -28,6 +28,6 @@
         var vm = this;
 
         //testing @todo delete
-        vm.kml = vm.kml || 'http://googlemaps.github.io/kml-samples/kml/Placemark/placemark.kml';
+        vm.kml = vm.kml || 'https://gis-villamaria.herokuapp.com/klm/bicicletas.klm';
     }
 })();
