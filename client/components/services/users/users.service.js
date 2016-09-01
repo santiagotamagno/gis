@@ -31,30 +31,48 @@
         * @return {Promise}
         */
         function login(user) {
-            return $http.post(
-                `${appConstants.serverBackEnd}user/auth`,
-                {
-                    username: user.username,
-                    password: user.password
-                })
-                .then(loginComplete)
-                .catch(loginFailed);
+            // @todo add when service are ready
+            // return $http.post(
+            //     `${appConstants.serverBackEnd}user/auth`,
+            //     {
+            //         username: user.username,
+            //         password: user.password
+            //     })
+            //     .then(loginComplete)
+            //     .catch(loginFailed);
 
+            // @todo delete when service are ready
+            var deferred = $q.defer();
+            var response = {
+                data: {
+                    status: 'success',
+                    sessionId: '12345',
+                    username: user.username
+                }
+            };
+
+            loginComplete(response);
+            /////////////////////
             function loginComplete(response) {
                 if (response.data.status === 'success') {
                     $cookieStore.put('token', {
                         sessionId: response.data.sessionId,
                         username: response.data.username
                     });
+                    deferred.resolve(response);
                     currentUser = response.data;
                 }
-                return response.data;
+                deferred.reject(response);
+                // return response.data;
             }
+            // @todo add when service are ready
+            // function loginFailed(error) {
+            //     $log.error('XHR Failed for login. ' + error.data.message);
+            //     return error.data;
+            // }
 
-            function loginFailed(error) {
-                $log.error('XHR Failed for login. ' + error.data.message);
-                return error.data;
-            }
+            // @todo delete when service are ready
+            return deferred.promise;
         }
 
         /**
@@ -62,22 +80,36 @@
          * @return {Promise}
          */
         function logout() {
-            return $http.get(
-                `${appConstants.serverBackEnd}user/logout?sessionId=${this.getSessionId()}`
-                )
-                .then(logoutComplete)
-                .catch(logoutFailed);
+            // @todo add when service are ready
+            // return $http.get(
+            //     `${appConstants.serverBackEnd}user/logout?sessionId=${this.getSessionId()}`
+            //     )
+            //     .then(logoutComplete)
+            //     .catch(logoutFailed);
 
+            // @todo delete when service are ready
+            var deferred = $q.defer();
+            var response = {
+                data: {
+                    status: 'success'
+                }
+            };
+            logoutComplete(response);
+            /////////////////////
             function logoutComplete(response) {
                 $cookieStore.remove('token');
                 currentUser = {};
-                return response.data;
+                deferred.resolve(response);
+                // return response.data;
             }
+            // @todo add when service are ready
+            // function logoutFailed(error) {
+            //     $log.error('XHR Failed for logout. ' + error.data.message);
+            //     return error.data;
+            // }
 
-            function logoutFailed(error) {
-                $log.error('XHR Failed for logout. ' + error.data.message);
-                return error.data;
-            }
+            // @todo delete when service are ready
+            return deferred.promise;
         }
 
         /**

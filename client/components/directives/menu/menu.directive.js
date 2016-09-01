@@ -5,7 +5,7 @@
         .module('GisApp.menu')
         .directive('ngMenu', NgMenu);
 
-    NgMenu.$inject = ['dataService'];
+    NgMenu.$inject = ['dataService', 'UsersService'];
 
     /* @ngInject */
     function NgMenu() {
@@ -17,7 +17,8 @@
             link: link,
             restrict: 'AE',
             scope: {
-                kml: '='
+                kml: '=',
+                title: '='
             }
         };
         return directive;
@@ -27,7 +28,7 @@
     }
 
     /* @ngInject */
-    function MenuCtrl(dataService) {
+    function MenuCtrl(dataService, UsersService) {
         var vm = this;
 
         vm.setKml = setKml;
@@ -39,9 +40,18 @@
                 .then(function (response) {
                     vm.data = response.data;
                 });
+            if (UsersService.isLoggedIn()) {
+                dataService.getDataLoggedIn()
+                        .then(function (response) {
+                            for (var value of response.data) {
+                                vm.data.push(value);
+                            }
+                        });
+            }
         }
 
-        function setKml(value) {
+        function setKml(value, section, title) {
+            vm.title = `${section}  - ${title}`;
             vm.kml = value;
         }
     }

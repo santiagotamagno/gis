@@ -27,11 +27,11 @@
                     password: vm.user.password
                 })
                 .then(function(response) {
-                    if (response.status === 'success') {
-                        $state.go('root.home.videos', {}, {
+                    if (response.data.status === 'success') {
+                        $state.go('root.home', {}, {
                             reload: true
                         });
-                    } else if (response.status === 'error') {
+                    } else if (response.data.status === 'error') {
                         vm.errors.other = response.error;
                     }
                 })

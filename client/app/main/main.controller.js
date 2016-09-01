@@ -11,6 +11,8 @@
     function MainCtrl() {
         var vm = this;
 
+        vm.title = 'Villa Maria';
+
         activate();
 
         function activate() {

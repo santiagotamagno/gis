@@ -28,7 +28,7 @@
         function logout() {
             UsersService.logout()
             .then(function(response) {
-                if (response.status === 'success') {
+                if (response.data.status === 'success') {
                     $state.go('root.home', {}, {
                         reload: true
                     });

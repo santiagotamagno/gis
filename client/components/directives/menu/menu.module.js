@@ -3,6 +3,7 @@
 
     angular
         .module('GisApp.menu', [
-            'GisApp.dataService'
+            'GisApp.dataService',
+            'GisApp.usersService'
         ]);
 })();

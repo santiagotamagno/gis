@@ -15,10 +15,6 @@
                     <a ui-sref="root.home.login">SignIn</a>
                     <p>{{::vm.errors}}</p>
                 </li>
-                <li ng-show="vm.isLoggedIn()">
-                    <a ui-sref="root.home.videos">Videos List</a>
-                </li>
-
                 <li class="dropdown" ng-show="vm.isLoggedIn()">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
                         <span class="fa fa-user"></span>

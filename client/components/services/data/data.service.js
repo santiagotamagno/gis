@@ -10,9 +10,14 @@
     /* @ngInject */
     function DataService($http) {
         this.getData = getData;
+        this.getDataLoggedIn = getDataLoggedIn;
 
-        function getData(status) {
+        function getData() {
             return $http.get('/mocks/data.json');
+        }
+
+        function getDataLoggedIn() {
+            return $http.get('/mocks/data-login.json');
         }
     }
 })();
