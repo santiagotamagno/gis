@@ -39,15 +39,15 @@
             dataService.getData()
                 .then(function (response) {
                     vm.data = response.data;
+                    if (UsersService.isLoggedIn()) {
+                        dataService.getDataLoggedIn()
+                            .then(function (response) {
+                                for (var value of response.data) {
+                                    vm.data.push(value);
+                                }
+                            });
+                    }
                 });
-            if (UsersService.isLoggedIn()) {
-                dataService.getDataLoggedIn()
-                        .then(function (response) {
-                            for (var value of response.data) {
-                                vm.data.push(value);
-                            }
-                        });
-            }
         }
 
         function setKml(value, section, title) {
