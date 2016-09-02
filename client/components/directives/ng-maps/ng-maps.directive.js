@@ -26,8 +26,5 @@
     /* @ngInject */
     function NgMapsCtrl() {
         var vm = this;
-
-        //testing @todo delete
-        vm.kml = vm.kml || 'https://gis-villamaria.herokuapp.com/klm/barrios.kmz';
     }
 })();

@@ -14,7 +14,7 @@
         "title": "Bancos",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
         "icon": "fa-money",
-        "kml": "https://github.com/downloads/brazzy/nikki/example.kmz"
+        "kml": "https://gis-villamaria.herokuapp.com/kml/bicicletas.kmz"
       }
     ]
   },
@@ -27,7 +27,7 @@
         "title": "Hospitales",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
         "icon": "fa-hospital-o",
-        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml"
+        "kml": "https://github.com/downloads/brazzy/nikki/example.kmz"
       },
       {
         "title": "Farmacias",
