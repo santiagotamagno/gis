@@ -3,6 +3,9 @@
 Install:
 * nodejs
 
+Deployed:
+* https://gis-villamaria.herokuapp.com/
+
 Run:
 * npm install
 * bower install
