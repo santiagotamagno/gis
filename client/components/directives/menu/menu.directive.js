@@ -18,7 +18,8 @@
             restrict: 'AE',
             scope: {
                 kml: '=',
-                title: '='
+                title: '=',
+                zoom: '='
             }
         };
         return directive;
@@ -50,9 +51,11 @@
                 });
         }
 
-        function setKml(value, section, title) {
+        function setKml(value, section, title, zoom) {
+            console.log(zoom);
             vm.title = `${section}  - ${title}`;
             vm.kml = value;
+            vm.zoom = zoom;
         }
     }
 })();

@@ -8,13 +8,15 @@
         "title": "Wifi-free - login",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
         "icon": "fa-wifi",
-        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml"
+        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml",
+        "zoom": 10
       },
       {
         "title": "Bancos - login",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
         "icon": "fa-money",
-        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml"
+        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml",
+        "zoom": 10
       }
     ]
   },
@@ -27,13 +29,15 @@
         "title": "Hospitales - login",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
         "icon": "fa-hospital-o",
-        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml"
+        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml",
+        "zoom": 10
       },
       {
         "title": "Farmacias - login",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
         "icon": "fa-medkit",
-        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml"
+        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml",
+        "zoom": 10
       }
     ]
   }

@@ -17,7 +17,8 @@
             restrict: 'AE',
             templateUrl: 'components/directives/ng-maps/ng-maps.html',
             scope: {
-                kml: '='
+                kml: '=',
+                zoom: '='
             }
         };
         return directive;

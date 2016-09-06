@@ -1,12 +1,12 @@
 <div class="container main">
     <div class="row">
         <div class="col-md-4">
-            <ng-menu kml="vm.kml" title="vm.title"></ng-menu>
+            <ng-menu kml="vm.kml" title="vm.title" zoom="vm.zoom"></ng-menu>
         </div>
         <div class="col-md-8">
             <section class="text-center">
                 <h3>{{vm.title}}</h3>
-                <ng-maps kml="vm.kml"></ng-maps>
+                <ng-maps kml="vm.kml" zoom="vm.zoom"></ng-maps>
             </section>
         </div>
     </div>
