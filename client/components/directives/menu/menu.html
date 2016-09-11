@@ -1,22 +1,38 @@
-<div class="panel-group menu" id="accordion">
-    <div class="panel panel-default" ng-repeat="value in vm.data">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#{{$index}}">
-                <span class="fa {{::value.icon}}"></span>{{::value.title}}</a>
-            </h4>
-        </div>
-        <div id="{{$index}}" class="panel-collapse collapse in">
-            <div class="panel-body">
-                <table class="table">
-                    <tr ng-repeat="val in value.sections" ng-click="vm.setKml(val.kml, value.title, val.title, val.zoom)">
-                        <td>
+<aside class="sidebar show perfectScrollbar menu">
+    <div id="solso-sidebar">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading1">
+                        <h4 class="panel-title text-center">
+                            <i class="fa fa-map-marker"></i>
+                            <span>Mapas</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default" ng-repeat="value in vm.data">
+                <div class="panel-heading" role="tab" id="heading{{$index}}">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}" aria-expanded="true" aria-controls="collapse2">
+                            <div class="title">
+                                <i class="fa {{::value.icon}}"></i>
+                                    <span>{{::value.title}}</span>
+                                <i class="pull-right fa fa-caret-down"></i>
+                            </div>
+                            <p class="description">{{::value.description}}</p>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse{{$index}}" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="heading{{$index}}">
+                    <div ng-repeat="val in value.sections" ng-click="vm.setKml(val.kml, value.title, val.title, val.zoom)">
+                        <a href="#" class="list-group-item">
                             <span class="fa {{::val.icon}}"></span>
-                            <a href="">{{::val.title}}</a>
-                        </td>
-                    </tr>
-                </table>
+                            <span>{{::val.title}}</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</aside>

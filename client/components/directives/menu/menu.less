@@ -1,14 +1,111 @@
-.menu {
-    .fa {
-        margin-right:10px;
+* {
+    outline: none !important;
+    border-radius: 0 !important;
+}
+
+h4 {
+    font-family: 'Dosis', arial;
+}
+
+i {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.sidebar {
+    background-color: #6595BC;
+    height: 100%;
+    padding: 0px;
+    position: fixed;
+    left: -300px;
+    right: auto;
+    top: 85px;
+    z-index: 1;
+    transition: left 0.5s;
+    -o-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+    -webkit-transition: left 0.5s;
+    overflow-y: hidden;
+    width: 17%;
+}
+
+.sidebar.show {
+    left: 0;
+    display: block;
+}
+
+.ps-scrollbar-y-rail {
+  margin: 5px 0;
+}
+
+.panel {
+    border: 0;
+    box-shadow: none;
+}
+
+.panel-default > .panel-heading {
+    background-color: #6595BC;
+}
+
+.panel-default > .panel-heading:hover {
+    background-color: #5B86A9;
+}
+
+.panel-default > .panel-heading  a {
+    color: #FFF;
+    display: block;
+    padding: 8px 0px;
+}
+
+.list-group-item {
+    padding-left: 25px;
+    border: 0;
+    background: #286090;
+}
+
+.list-group-item:hover {
+    background: #365167;
+    padding-left: 15px;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: linear;
+}
+
+a.list-group-item {
+    color: #FFF;
+}
+
+a.list-group-item:hover {
+    background: #5881A2;
+    color: #FFF;
+}
+
+.solso-active {
+    background: #385269 !important;
+}
+
+.list-group-item.no-border {
+    border: 0;
+}
+
+.panel-group .panel + .panel {
+    margin-top: 0px;
+}
+
+.description {
+    margin: 10px 0 0 27px;
+}
+
+.title {
+    color: rgb(51, 51, 51);
+}
+
+@media (max-width: @screen-sm-min) {
+    .sidebar {
+        position: initial;
     }
-    .panel-body {
-        padding:0px;
-        table tr td {
-            padding-left: 15px;
-        }
-        .table {
-            margin-bottom: 0px;
-        }
+    aside {
+        width: 100%;
     }
 }
