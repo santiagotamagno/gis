@@ -1,22 +1,11 @@
 <aside class="sidebar show perfectScrollbar menu">
     <div id="solso-sidebar">
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="heading1">
-                        <h4 class="panel-title text-center">
-                            <i class="fa fa-map-marker"></i>
-                            <span class="title">Mapas</span>
-                        </h4>
-                    </div>
-                </div>
-            </div>
             <div class="panel panel-default" ng-repeat="value in vm.data">
                 <div class="panel-heading" role="tab" id="heading{{$index}}">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}" aria-expanded="true" aria-controls="collapse2">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}" aria-expanded="true" aria-controls="collapse2" class="{{(vm.colors[$index]) ? vm.colors[$index] : $index=$index - 4 }}">
                             <div class="title">
-                            <i class="fa fa-map-o" aria-hidden="true"></i>
                                 <span>{{::value.title}}</span>
                                 <!-- <i class="fa {{::value.icon}}"></i> -->
                                 <i class="pull-right fa fa-caret-down"></i>
@@ -28,7 +17,7 @@
                 <div id="collapse{{$index}}" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="heading{{$index}}">
                     <div ng-repeat="val in value.sections" ng-click="vm.setKml(val.kml, value.title, val.title, val.zoom)">
                         <a href="#" class="list-group-item {{(vm.colors[$index]) ? vm.colors[$index] : $index=$index - 4 }}">
-                            <i class="fa fa-map-pin" aria-hidden="true"></i>
+                            <!-- <span>{{::val.icon}}</span> -->
                             <span>{{::val.title}}</span>
                             <!-- <span>{{::val.description}}</span> -->
                         </a>
