@@ -33,6 +33,13 @@
         var vm = this;
 
         vm.setKml = setKml;
+        vm.colors = [
+            'aqua-border',
+            'blue-border',
+            'green-border',
+            'red-border ',
+            'yellow-border'
+        ];
 
         activate();
 
