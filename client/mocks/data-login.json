@@ -1,45 +1,142 @@
 [
   {
-    "title": "Servicios - login",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, porro?",
-    "icon": "fa-server",
+    "title": "Urbanismo",
+    "description": "Barrios, Pleaneamiento, Red Vial, Ciclovías, etc.",
+    "icon": "",
     "sections": [
       {
-        "title": "Wifi-free - login",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
-        "icon": "fa-wifi",
-        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml",
-        "zoom": 10
+        "title": "Barrios",
+        "description": "El mapa contiene las delimitaciones, nombre e información de los barrios.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/urbanismo/barrios.kmz",
+        "zoom": 15
       },
       {
-        "title": "Bancos - login",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
-        "icon": "fa-money",
-        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml",
-        "zoom": 10
+        "title": "Ciclovías",
+        "description": "Mapa que contiene las ciclovías protegidas (bicisendas) finalizadas, en obra y proyectadas. Contiene además las bicicleterias y talleres.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/urbanismo/ciclovias.kmz",
+        "zoom": 15
       }
     ]
   },
   {
-    "title": "Salud - login",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, porro?",
-    "icon": "fa-heart",
+    "title": "Servicios",
+    "description": "Policía, Bomberos, Bancos, Cajeros, Servicios Sociales, etc.",
+    "icon": "",
     "sections": [
       {
-        "title": "Hospitales - login",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
-        "icon": "fa-hospital-o",
-        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml",
-        "zoom": 10
+        "title": "Comisarías y Bomberos",
+        "description": "Mapa que contiene información de comisarías de la policía federal, secciones policiales y cuarteles de bomberos.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/comisarias-y-bomberos.kmz",
+        "zoom": 15
       },
       {
-        "title": "Farmacias - login",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
-        "icon": "fa-medkit",
-        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml",
-        "zoom": 10
+        "title": "Servicios Sociales",
+        "description": "Mapa que contiene información de Casas de Niños y Adolescentes, Casas Jóvenes, Centros Comunitarios, Centros de Acción Familiar, Centros de Atención de Mujeres, Centros Integrales, sedes y áreas de Defensorías de Niños, Hogares de Atención Integral, Hogares de Día y Permanentes para la Tercera Edad, Jardines Maternales, Juegotecas Barriales y de Gestión Asociada, Paradores Nocturnos y la Dirección General de la Tercera Edad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/servicios-sociales.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Arquidiócesis",
+        "description": "El plano Eclesiástico de la Arquidiócesis de Villa María contiene información de curias eclesiásticas, vicarías episcopales, parroquias, basílicas, santuario, iglesias, capillas, y establecimientos de educación ubicados en la ciudad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/arquidiocesis.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Bancos",
+        "description": "Mapa que contiene información de entidades bancarias en la ciudad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/bancos.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Estaciones de Servicio",
+        "description": "Mapa que incluye las estaciones de servicio de la ciudad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/estaciones-de-servicio.kmz",
+        "zoom": 15
+      }
+    ]
+  },
+  {
+    "title": "Salud",
+    "description": "Hospitales, Clínicas, Centros de salud, Centros Médicos Barriales, Farmacias, etc.",
+    "icon": "",
+    "sections": [
+      {
+        "title": "Información Hospitalaria",
+        "description": "Mapa que contiene información de hospitales, centros médicos barriales, centros de salud y acción comunitaria y áreas hospitalarias.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/salud/informacio-hospitalaria.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Farmacias",
+        "description": "Mapa que contiene información de farmacias en la ciudad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/salud/farmacias.kmz",
+        "zoom": 15
+      }
+    ]
+  },
+  {
+    "title": "Educación",
+    "description": "Establecimientos de gestión Pública y Privada, Universidades e Institutos de formación superior.",
+    "icon": "",
+    "sections": [
+      {
+        "title": "Estudios Universitarios",
+        "description": "Mapa que contiene información de instituciones de Estudios Universitarios.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/universitarios.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Estudios Terciarios",
+        "description": "Mapa que contiene información de instituciones de Estudios Terciarios.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/terciarios.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Estudios Secundarios",
+        "description": "Mapa que contiene información de instituciones de Estudios Secundarios.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/secundarios.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Estudios Primarios",
+        "description": "Mapa que contiene información de instituciones de Estudios Primarios.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/primarios.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Educación Pre-Primaria",
+        "description": "Mapa que contiene información de instituciones de Educación Pre-Primaria.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/pre-primaria.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Estudios de Posgrado",
+        "description": "Mapa que contiene información de instituciones de Estudios de Posgrado.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/posgrado.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Formación Artística y Cultural",
+        "description": "Mapa que contiene información de instituciones de Formación Artística y Cultural.kmz.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/cultural.kmz",
+        "zoom": 15
       }
     ]
   }
-
 ]

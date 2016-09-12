@@ -71,14 +71,70 @@
         "title": "Información Hospitalaria",
         "description": "Mapa que contiene información de hospitales, centros médicos barriales, centros de salud y acción comunitaria y áreas hospitalarias.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/informacio-hospitalaria.kmz",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/salud/informacio-hospitalaria.kmz",
         "zoom": 15
       },
       {
         "title": "Farmacias",
         "description": "Mapa que contiene información de farmacias en la ciudad.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/farmacias.kmz",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/salud/farmacias.kmz",
+        "zoom": 15
+      }
+    ]
+  },
+  {
+    "title": "Educación",
+    "description": "Establecimientos de gestión Pública y Privada, Universidades e Institutos de formación superior.",
+    "icon": "",
+    "sections": [
+      {
+        "title": "Estudios Universitarios",
+        "description": "Mapa que contiene información de instituciones de Estudios Universitarios.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/universitarios.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Estudios Terciarios",
+        "description": "Mapa que contiene información de instituciones de Estudios Terciarios.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/terciarios.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Estudios Secundarios",
+        "description": "Mapa que contiene información de instituciones de Estudios Secundarios.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/secundarios.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Estudios Primarios",
+        "description": "Mapa que contiene información de instituciones de Estudios Primarios.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/primarios.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Educación Pre-Primaria",
+        "description": "Mapa que contiene información de instituciones de Educación Pre-Primaria.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/pre-primaria.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Estudios de Posgrado",
+        "description": "Mapa que contiene información de instituciones de Estudios de Posgrado.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/posgrado.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Formación Artística y Cultural",
+        "description": "Mapa que contiene información de instituciones de Formación Artística y Cultural.kmz.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/cultural.kmz",
         "zoom": 15
       }
     ]

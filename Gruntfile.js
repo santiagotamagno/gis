@@ -381,8 +381,7 @@ module.exports = function(grunt) {
                       'assets/images/{,*/}*.*',
                       'assets/fonts/**/*', 'index.html',
                       'mocks/{,*/}*.*',
-                      //'kmz/{,*/}*.*'
-                      'kmz/**/*'
+                      'kml/{,*/}*.*'
                     ]
                 },
                 {
