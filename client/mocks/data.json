@@ -61,5 +61,26 @@
         "zoom": 15
       }
     ]
+  },
+  {
+    "title": "Salud",
+    "description": "Hospitales, Clínicas, Centros de salud, Centros Médicos Barriales, Farmacias, etc.",
+    "icon": "",
+    "sections": [
+      {
+        "title": "Información Hospitalaria",
+        "description": "Mapa que contiene información de hospitales, centros médicos barriales, centros de salud y acción comunitaria y áreas hospitalarias.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/informacio-hospitalaria.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Farmacias",
+        "description": "Mapa que contiene información de farmacias en la ciudad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/farmacias.kmz",
+        "zoom": 15
+      }
+    ]
   }
 ]
