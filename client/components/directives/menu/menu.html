@@ -4,7 +4,7 @@
             <div class="panel panel-default" ng-repeat="value in vm.data">
                 <div class="panel-heading" role="tab" id="heading{{$index}}">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}" aria-expanded="true" aria-controls="collapse2" class="{{(vm.colors[$index]) ? vm.colors[$index] : $index=$index - 4 }}">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}" aria-expanded="true" aria-controls="collapse2" class="{{vm.colors[$index]}}">
                             <div class="title">
                                 <span>{{::value.title}}</span>
                                 <!-- <i class="fa {{::value.icon}}"></i> -->
@@ -16,7 +16,7 @@
                 </div>
                 <div id="collapse{{$index}}" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="heading{{$index}}">
                     <div ng-repeat="val in value.sections" ng-click="vm.setKml(val.kml, value.title, val.title, val.zoom)">
-                        <a href="#" class="list-group-item {{(vm.colors[$index]) ? vm.colors[$index] : $index=$index - 4 }}">
+                        <a href="#" class="list-group-item {{vm.colors[$index]}}">
                             <!-- <span>{{::val.icon}}</span> -->
                             <span>{{::val.title}}</span>
                             <!-- <span>{{::val.description}}</span> -->
