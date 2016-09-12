@@ -74,7 +74,7 @@
                 if (i === 4) {
                     index = 0;
                 }
-                aColors.push(colors[index])
+                aColors.push(colors[index]);
                 index++;
             }
             return aColors;
