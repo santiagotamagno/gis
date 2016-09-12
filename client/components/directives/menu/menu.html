@@ -16,9 +16,9 @@
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}" aria-expanded="true" aria-controls="collapse2">
                             <div class="title">
-                                <i class="fa {{::value.icon}}"></i>
+                                <!-- <i class="fa {{::value.icon}}"></i>
                                     <span>{{::value.title}}</span>
-                                <i class="pull-right fa fa-caret-down"></i>
+                                <i class="pull-right fa fa-caret-down"></i> -->
                             </div>
                             <p class="description">{{::value.description}}</p>
                         </a>
@@ -27,8 +27,9 @@
                 <div id="collapse{{$index}}" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="heading{{$index}}">
                     <div ng-repeat="val in value.sections" ng-click="vm.setKml(val.kml, value.title, val.title, val.zoom)">
                         <a href="#" class="list-group-item">
-                            <span class="fa {{::val.icon}}"></span>
+                            <!-- <span class="fa {{::val.icon}}"></span> -->
                             <span>{{::val.title}}</span>
+                            <span>{{::val.description}}</span>
                         </a>
                     </div>
                 </div>

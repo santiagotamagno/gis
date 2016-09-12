@@ -1,7 +1,7 @@
 [
   {
     "title": "Urbanismo",
-    "description": "Baarios, Pleaneamiento, Red Vial, Ciclovías, etc.",
+    "description": "Barrios, Pleaneamiento, Red Vial, Ciclovías, etc.",
     "icon": "",
     "sections": [
       {
@@ -16,6 +16,48 @@
         "description": "Mapa que contiene las ciclovías protegidas (bicisendas) finalizadas, en obra y proyectadas. Contiene además las bicicleterias y talleres.",
         "icon": "",
         "kml": "https://gis-villamaria.herokuapp.com/kmz/urbanismo/ciclovias.kmz",
+        "zoom": 15
+      }
+    ]
+  },
+  {
+    "title": "Servicios",
+    "description": "Policía, Bomberos, Bancos, Cajeros, Servicios Sociales, etc.",
+    "icon": "",
+    "sections": [
+      {
+        "title": "Comisarías y Bomberos",
+        "description": "Mapa que contiene información de comisarías de la policía federal, secciones policiales y cuarteles de bomberos.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/comisarias-y-bomberos.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Servicios Sociales",
+        "description": "Mapa que contiene información de Casas de Niños y Adolescentes, Casas Jóvenes, Centros Comunitarios, Centros de Acción Familiar, Centros de Atención de Mujeres, Centros Integrales, sedes y áreas de Defensorías de Niños, Hogares de Atención Integral, Hogares de Día y Permanentes para la Tercera Edad, Jardines Maternales, Juegotecas Barriales y de Gestión Asociada, Paradores Nocturnos y la Dirección General de la Tercera Edad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/servicios-sociales.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Arquidiócesis",
+        "description": "El plano Eclesiástico de la Arquidiócesis de Villa María contiene información de curias eclesiásticas, vicarías episcopales, parroquias, basílicas, santuario, iglesias, capillas, y establecimientos de educación ubicados en la ciudad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/arquidiocesis.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Bancos",
+        "description": "Mapa que contiene información de entidades bancarias en la ciudad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/bancos.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Estaciones de Servicio",
+        "description": "Mapa que incluye las estaciones de servicio de la ciudad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/estaciones-de-servicio.kmz",
         "zoom": 15
       }
     ]
