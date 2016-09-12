@@ -1,45 +1,23 @@
 [
   {
-    "title": "Servicios",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, porro?",
-    "icon": "fa-server",
+    "title": "Urbanismo",
+    "description": "Baarios, Pleaneamiento, Red Vial, Ciclovías, etc.",
+    "icon": "",
     "sections": [
       {
-        "title": "Wifi-free",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
-        "icon": "fa-wifi",
-        "kml": "https://gis-villamaria.herokuapp.com/kml/barrios.kmz",
+        "title": "Barrios",
+        "description": "El mapa contiene las delimitaciones, nombre e información de los barrios.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/urbanismo/barrios.kmz",
         "zoom": 15
       },
       {
-        "title": "Bancos",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
-        "icon": "fa-money",
-        "kml": "https://gis-villamaria.herokuapp.com/kml/bicicletas.kmz",
-        "zoom": 15
-      }
-    ]
-  },
-  {
-    "title": "Salud",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, porro?",
-    "icon": "fa-heart",
-    "sections": [
-      {
-        "title": "Hospitales",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
-        "icon": "fa-hospital-o",
-        "kml": "https://github.com/downloads/brazzy/nikki/example.kmz",
-        "zoom": 15
-      },
-      {
-        "title": "Farmacias",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto debitis at!",
-        "icon": "fa-medkit",
-        "kml": "https://developers.google.com/kml/documentation/KML_Samples.kml",
+        "title": "Ciclovías",
+        "description": "Mapa que contiene las ciclovías protegidas (bicisendas) finalizadas, en obra y proyectadas. Contiene además las bicicleterias y talleres.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/urbanismo/ciclovias.kmz",
         "zoom": 15
       }
     ]
   }
-
 ]
