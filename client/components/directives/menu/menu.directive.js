@@ -71,7 +71,7 @@
             var index = 0;
 
             for (var i = 0; i < 100; i++) {
-                if (i === 4) {
+                if (i % 5 === 0) {
                     index = 0;
                 }
                 aColors.push(colors[index]);
