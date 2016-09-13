@@ -27,5 +27,13 @@
     /* @ngInject */
     function NgMapsCtrl() {
         var vm = this;
+
+        vm.styles = [{
+            featureType: 'poi',
+            elementType: 'labels',
+            stylers: [{
+                    visibility: 'off'
+                }]
+        }];
     }
 })();
