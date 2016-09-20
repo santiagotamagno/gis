@@ -221,7 +221,7 @@
         "kml": "https://gis-villamaria.herokuapp.com/kmz/cultura/museos.kmz",
         "zoom": 15
       },
-
+      {
         "title": "Periódicos",
         "description": "Mapa que contiene la información de los periódicos de la ciudad.",
         "icon": "",
