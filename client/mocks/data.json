@@ -138,5 +138,110 @@
         "zoom": 15
       }
     ]
+  },
+  {
+    "title": "Deportes y Esparcimiento",
+    "description": "Polideportivos, Clubes Deportivos y de Barrio, Estadios, Federaciones, Ferias, Restaurantes, Colectividades, Pubs, etc.",
+    "icon": "",
+    "sections": [
+      {
+        "title": "Esparcimiento",
+        "description": "Mapa que contiene información de centros comerciales, actividades para chicos, centros de recreación, polideportivos, pubs y discotecas.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/esparcimiento/esparcimiento.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Gastronomía",
+        "description": "Mapa que contiene información de restaurantes y locales gastronómicos.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/esparcimiento/gastronomia.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Sedes Deportivas",
+        "description": "Mapa que contiene información de clubes, clubes de barrio, federaciones, polideportivos y estadios en la ciudad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/esparcimiento/sedes-deportivas.kmz",
+        "zoom": 15
+      }
+    ]
+  },
+  {
+    "title": "Turismo",
+    "description": "Alojamientos, Agencias de Viajes, Terminales, Centros de Informes, etc.",
+    "icon": "",
+    "sections": [
+      {
+        "title": "Agencias de Viajes",
+        "description": "Mapa que contiene información de Agencias de Viajes en la ciudad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/turismo/agencias.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Alojamientos",
+        "description": "Mapa que contiene información turística de Alojamientos.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/turismo/alojamientos.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Información Turística",
+        "description": "Mapa que contiene información de Centros de Informes.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/turismo/informacion.kmz",
+        "zoom": 15
+      }
+    ]
+  },
+  {
+    "title": "Cultura",
+    "description": "Cines, Teatros, Museos, Bibliotecas, Centros Culturales, Galerías, Bares Culturales, etc.",
+    "icon": "",
+    "sections": [
+      {
+        "title": "Bibliotecas y Archivos",
+        "description": "Mapa que contiene información de las bibliotecas y archivos de la ciudad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/cultura/bibliotecas.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Centro Culturales",
+        "description": "Mapa que contiene información de los centros culturales de la ciudad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/cultura/centros.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Museos",
+        "description": "Mapa que contiene información de museos de la ciudad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/cultura/museos.kmz",
+        "zoom": 15
+      },
+
+        "title": "Periódicos",
+        "description": "Mapa que contiene la información de los periódicos de la ciudad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/cultura/periodicos.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Espacios Escénicos",
+        "description": "Mapa que contiene información de los teatros, salas de música, danza y circo de la ciudad.",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/cultura/espacios.kmz",
+        "zoom": 15
+      },
+      {
+        "title": "Radios y Television",
+        "description": "Mapa que contiene información de las emisoras de televisión local y radio (AM/FM) local",
+        "icon": "",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/cultura/emisoras.kmz",
+        "zoom": 15
+      }
+    ]
   }
 ]
