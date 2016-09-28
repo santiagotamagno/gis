@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<NetworkLink>
+<name><![CDATA[policia]]></name>
+<Link>
+<href>
+https://fusiontables.google.com/exporttable?query=select+col2%2C+col0+from+17aG57Q18aIZYOWa7ZUeCJZxGRE5taPQsUn7CbGU3+limit+1000&amp;o=kmllink&amp;g=col2&amp;styleId=2&amp;templateId=3</href>
+</Link>
+</NetworkLink>
+</kml>
