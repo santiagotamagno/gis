@@ -8,7 +8,7 @@
         "title": "Accidentes de tránsito",
         "description": "El mapa contiene las información referente a los accidentes de tránsito.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/transito.kml",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/transito/transito.kml",
         "zoom": 15
       }
     ]
@@ -22,7 +22,7 @@
         "title": "Actas labradas",
         "description": "Mapa que contiene información de las actas labradas en la ciudad.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/policia.kml",
+        "kml": "https://gis-villamaria.herokuapp.com/kmz/policia/policia.kml",
         "zoom": 15
       }
     ]
