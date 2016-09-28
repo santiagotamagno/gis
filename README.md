@@ -4,7 +4,8 @@ Install:
 * nodejs
 
 Deployed:
-* https://gis-villamaria.herokuapp.com/
+* https://gis-villamaria-dev.herokuapp.com
+
 
 Run:
 * npm install
