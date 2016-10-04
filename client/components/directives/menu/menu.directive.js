@@ -17,9 +17,7 @@
             link: link,
             restrict: 'AE',
             scope: {
-                kml: '=',
-                title: '=',
-                zoom: '='
+                options: '='
             }
         };
         return directive;
@@ -54,10 +52,13 @@
                 });
         }
 
-        function setKml(value, section, title, zoom) {
-            vm.title = `${section}  - ${title}`;
-            vm.kml = value;
-            vm.zoom = zoom;
+        function setKml(kml, section, title, zoom, heatMap) {
+            vm.options = {
+                title: `${section}  - ${title}`,
+                kml: kml,
+                zoom: zoom,
+                heatMap: heatMap
+            }
             vm.states.title = title;
         }
 

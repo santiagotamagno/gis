@@ -243,5 +243,33 @@
         "zoom": 15
       }
     ]
+  },
+  {
+    "title": "Transito",
+    "description": "Accidentes, semáforos, etc.",
+    "icon": "",
+    "sections": [
+      {
+        "title": "Accidentes de tránsito",
+        "description": "El mapa contiene las información referente a los accidentes de tránsito.",
+        "icon": "",
+        "heatMap": "1TAe8dPZvioUBMzT6qRLvq1vj72uqjMqzW4MSzmWU",
+        "zoom": 13
+      }
+    ]
+  },
+  {
+    "title": "Seguridad",
+    "description": "Policía, Bomberos, etc.",
+    "icon": "",
+    "sections": [
+      {
+        "title": "Actas labradas",
+        "description": "Mapa que contiene información de las actas labradas en la ciudad.",
+        "icon": "",
+        "heatMap": "17aG57Q18aIZYOWa7ZUeCJZxGRE5taPQsUn7CbGU3",
+        "zoom": 13
+      }
+    ]
   }
 ]
