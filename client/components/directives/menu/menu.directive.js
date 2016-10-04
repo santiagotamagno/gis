@@ -58,7 +58,7 @@
                 kml: kml,
                 zoom: zoom,
                 heatMap: heatMap
-            }
+            };
             vm.states.title = title;
         }
 
