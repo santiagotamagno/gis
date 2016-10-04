@@ -16,7 +16,7 @@
                 </div>
                 <div id="collapse{{$index}}" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="heading{{$index}}">
                     <div ng-repeat="val in value.sections" ng-click="vm.setKml(val.kml, value.title, val.title, val.zoom)">
-                        <a href="#" class="list-group-item {{vm.colors[$index]}}">
+                        <a href="#" class="list-group-item {{vm.colors[$index]}}" ng-class="{'active': val.title == vm.states.title}">
                             <!-- <span>{{::val.icon}}</span> -->
                             <span>{{::val.title}}</span>
                             <!-- <span>{{::val.description}}</span> -->

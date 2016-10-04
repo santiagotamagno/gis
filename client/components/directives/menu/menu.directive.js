@@ -33,6 +33,7 @@
         var vm = this;
 
         vm.setKml = setKml;
+        vm.states = {};
 
         activate();
 
@@ -57,6 +58,7 @@
             vm.title = `${section}  - ${title}`;
             vm.kml = value;
             vm.zoom = zoom;
+            vm.states.title = title;
         }
 
         function setColors() {
