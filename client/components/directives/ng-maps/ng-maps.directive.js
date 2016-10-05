@@ -23,7 +23,7 @@
         return directive;
     }
 
-    NgMapsCtrl.$inject = ['NgMap', '$scope']
+    NgMapsCtrl.$inject = ['NgMap', '$scope'];
 
     /* @ngInject */
     function NgMapsCtrl(NgMap, $scope) {
