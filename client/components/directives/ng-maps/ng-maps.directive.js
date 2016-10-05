@@ -8,7 +8,7 @@
     // NgMaps.$inject = ['dependencies'];
 
     /* @ngInject */
-    function NgMaps() {
+    function NgMaps(NgMap) {
 
         var directive = {
             bindToController: true,
@@ -23,9 +23,28 @@
         return directive;
     }
 
+    NgMapsCtrl.$inject = ['NgMap', '$scope']
+
     /* @ngInject */
-    function NgMapsCtrl() {
+    function NgMapsCtrl(NgMap, $scope) {
         var vm = this;
+
+        $scope.$watch('vm.options', function(newNames, oldNames) {
+            if (newNames !== undefined) {
+                if (_.has(newNames, 'heatMap')) {
+                    if (newNames.heatMap !== undefined) {
+                        NgMap.getMap().then(function(map) {
+                            map.fusionTablesLayers[0].setOptions({
+                                query: {
+                                  select: 'location',
+                                  from: newNames.heatMap
+                              },
+                            });
+                        });
+                    }
+                }
+            }
+        });
 
         vm.styles = [{
             featureType: 'poi',
