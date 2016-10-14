@@ -67,8 +67,7 @@
 
         function onDataFetched(response, map) {
             if (response.error) {
-                alert('Unable to fetch data. ' + response.error.message +
-                    ' (' + response.error.code + ')');
+                console.log('response.error');
             } else {
                 drawHeatmap(extractLocations(response.rows), map);
             }
