@@ -36,7 +36,6 @@
                 if (_.has(newNames, 'heatMap') && newNames.heatMap !== undefined) {
                     NgMap.getMap().then(function(map) {
                         gapi.client.load('fusiontables', 'v1', function() {
-                            console.log(newNames.heatMap);
                             var query = 'select col1 from ' + newNames.heatMap;
                             var request = gapi.client.fusiontables.query.sqlGet({sql: query});
                             request.execute(function(response) {
@@ -60,9 +59,9 @@
         });
 
         function cleanMapHeatMap() {
-            NgMap.getMap().then(function(map) {
-                heatmap.setMap(map);
-            });
+            if (vm.heatmap !== undefined) {
+                vm.heatmap.setMap(null);
+            }
         }
 
         function onDataFetched(response, map) {
@@ -112,7 +111,7 @@
         }
 
         function drawHeatmap(locations, map) {
-            var heatmap = new google.maps.visualization.HeatmapLayer({
+            vm.heatmap = new google.maps.visualization.HeatmapLayer({
                 dissipating: true,
                 gradient: [
                   'rgba(102,255,0,0)',
@@ -131,7 +130,7 @@
                 radius: 33,
                 data: locations
             });
-            heatmap.setMap(map);
+            vm.heatmap.setMap(map);
         }
 
         vm.styles = [{
