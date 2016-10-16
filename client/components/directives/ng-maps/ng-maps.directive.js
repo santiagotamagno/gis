@@ -130,6 +130,7 @@
                 radius: 33,
                 data: locations
             });
+            cleanMapHeatMap();
             vm.heatmap.setMap(map);
         }
 
