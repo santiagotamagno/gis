@@ -68,7 +68,7 @@
 
                     //check equals heapmap
                     if (oldNames === undefined) {
-                        var oldNames = {};
+                        oldNames = {};
                         oldNames.heatMap = undefined;
                     }
                     if (newNames.heatMap !== oldNames.heatMap) {
