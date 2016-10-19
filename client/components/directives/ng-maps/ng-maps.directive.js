@@ -28,26 +28,60 @@
     /* @ngInject */
     function NgMapsCtrl(NgMap, $scope) {
         var vm = this;
+        vm.toggleTraffic = toggleTraffic;
+        vm.styles = [{
+            featureType: 'poi',
+            elementType: 'labels',
+            stylers: [{
+                    visibility: 'off'
+                }]
+        }];
+
+        activate();
+
+        function activate() {
+            addTraffic();
+        }
+
+        function toggleTraffic() {
+            if (vm.trafficLayer.getMap() === null) {
+                addTraffic();
+            } else {
+                vm.trafficLayer.setMap(null);
+                vm.isCheckedTraffic = false;
+            }
+        }
+
+        function addTraffic() {
+            NgMap.getMap().then(function(map) {
+                vm.trafficLayer = new google.maps.TrafficLayer();
+                vm.trafficLayer.setMap(map);
+                vm.isCheckedTraffic = true;
+            });
+        }
 
         $scope.$watch('vm.options', function(newNames, oldNames) {
             if (newNames !== undefined) {
 
                 //Fusion tables && heatMap
                 if (_.has(newNames, 'heatMap') && newNames.heatMap !== undefined) {
-                    NgMap.getMap().then(function(map) {
-                        gapi.client.load('fusiontables', 'v1', function() {
-                            var query = 'select col1 from ' + newNames.heatMap;
-                            var request = gapi.client.fusiontables.query.sqlGet({sql: query});
-                            request.execute(function(response) {
-                                onDataFetched(response, map);
+
+                    //check equals heapmap
+                    if (oldNames === undefined) {
+                        var oldNames = {};
+                        oldNames.heatMap = undefined;
+                    }
+                    if (newNames.heatMap !== oldNames.heatMap) {
+                        NgMap.getMap().then(function(map) {
+                            gapi.client.load('fusiontables', 'v1', function() {
+                                var query = 'select col1 from ' + newNames.heatMap;
+                                var request = gapi.client.fusiontables.query.sqlGet({sql: query});
+                                request.execute(function(response) {
+                                    onDataFetched(response, map);
+                                });
                             });
                         });
-                    });
-                }
-
-                //transit
-                if (_.has(newNames, 'transit') && newNames.transit !== undefined) {
-                    cleanMapHeatMap();
+                    }
                 }
 
                 //poi
@@ -133,13 +167,5 @@
             cleanMapHeatMap();
             vm.heatmap.setMap(map);
         }
-
-        vm.styles = [{
-            featureType: 'poi',
-            elementType: 'labels',
-            stylers: [{
-                    visibility: 'off'
-                }]
-        }];
     }
 })();
