@@ -1,7 +1,7 @@
 <div class="ng-maps">
     <ng-map zoom="{{vm.options.zoom}}" center="Villa María, Córdoba" style="height:88vh;width:100%" styles="{{vm.styles}}">
         <kml-layer url="{{vm.options.kml}}" ng-if="!vm.showLayer && vm.options.kml"></kml-layer>
-        <custom-control class="buttons-control" position="TOP_RIGHT" index="1">
+<!--         <custom-control class="buttons-control" position="TOP_RIGHT" index="1">
             <div>
                 <p ng-click="vm.toggleTraffic()">
                     <input type="checkbox" ng-model="vm.isCheckedTraffic" name="trafico">
@@ -16,6 +16,6 @@
                     Limpiar Mapa
                 </p>
             </div>
-        </custom-control>
+        </custom-control> -->
     </ng-map>
 </div>
