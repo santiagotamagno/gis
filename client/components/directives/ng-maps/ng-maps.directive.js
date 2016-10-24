@@ -50,15 +50,7 @@
             if (vm.showLayer && vm.options.heatMap !== undefined) {
                 cleanMapHeatMap();
             } else if (vm.options.heatMap !== undefined) {
-                NgMap.getMap().then(function(map) {
-                    gapi.client.load('fusiontables', 'v1', function() {
-                        var query = 'select col1 from ' + vm.options.heatMap;
-                        var request = gapi.client.fusiontables.query.sqlGet({sql: query});
-                        request.execute(function(response) {
-                            onDataFetched(response, map);
-                        });
-                    });
-                });
+                addHeatMap(vm.options.heatMap);
             }
         }
         function toggleTraffic() {
@@ -78,6 +70,18 @@
             });
         }
 
+        function addHeatMap(key) {
+            NgMap.getMap().then(function(map) {
+                gapi.client.load('fusiontables', 'v1', function() {
+                    var query = 'select col1 from ' + key;
+                    var request = gapi.client.fusiontables.query.sqlGet({sql: query});
+                    request.execute(function(response) {
+                        onDataFetched(response, map);
+                    });
+                });
+            });
+        }
+
         $scope.$watch('vm.options', function(newNames, oldNames) {
             if (newNames !== undefined) {
 
@@ -90,15 +94,7 @@
                         oldNames.heatMap = undefined;
                     }
                     if (newNames.heatMap !== oldNames.heatMap) {
-                        NgMap.getMap().then(function(map) {
-                            gapi.client.load('fusiontables', 'v1', function() {
-                                var query = 'select col1 from ' + newNames.heatMap;
-                                var request = gapi.client.fusiontables.query.sqlGet({sql: query});
-                                request.execute(function(response) {
-                                    onDataFetched(response, map);
-                                });
-                            });
-                        });
+                        addHeatMap(newNames.heatMap);
                     }
                 }
 
