@@ -5,7 +5,7 @@
         .module('GisApp.ngMaps')
         .directive('ngMaps', NgMaps);
 
-    // NgMaps.$inject = ['dependencies'];
+    NgMaps.$inject = [];
 
     /* @ngInject */
     function NgMaps(NgMap) {
@@ -29,6 +29,8 @@
     function NgMapsCtrl(NgMap, $scope) {
         var vm = this;
         vm.toggleTraffic = toggleTraffic;
+        vm.toggleCleanMap = toggleCleanMap;
+        vm.showLayer = false;
         vm.styles = [{
             featureType: 'poi',
             elementType: 'labels',
@@ -43,6 +45,22 @@
             addTraffic();
         }
 
+        function toggleCleanMap() {
+            vm.showLayer = !vm.showLayer;
+            if (vm.showLayer && vm.options.heatMap !== undefined) {
+                cleanMapHeatMap();
+            } else if (vm.options.heatMap !== undefined) {
+                NgMap.getMap().then(function(map) {
+                    gapi.client.load('fusiontables', 'v1', function() {
+                        var query = 'select col1 from ' + vm.options.heatMap;
+                        var request = gapi.client.fusiontables.query.sqlGet({sql: query});
+                        request.execute(function(response) {
+                            onDataFetched(response, map);
+                        });
+                    });
+                });
+            }
+        }
         function toggleTraffic() {
             if (vm.trafficLayer.getMap() === null) {
                 addTraffic();

@@ -267,14 +267,14 @@
         "title": "Accidentes de tránsito",
         "description": "El mapa contiene las información referente a los accidentes de tránsito.",
         "icon": "",
-        "heatMap": "tPDzIweDkHWrmzpsgRqleYLezTS9q9fZ_Loj2VMn",
+        "heatMap": "1tPDzIweDkHWrmzpsgRqleYLezTS9q9fZ_Loj2VMn",
         "zoom": 13
       },
       {
         "title": "Actas labradas",
         "description": "Mapa que contiene información de las actas labradas en la ciudad.",
         "icon": "",
-        "heatMap": "tPDzIweDkHWrmzpsgRqleYLezTS9q9fZ_Loj2VMn",
+        "heatMap": "1tPDzIweDkHWrmzpsgRqleYLezTS9q9fZ_Loj2VMn",
         "zoom": 13
       }
     ]
