@@ -5,7 +5,7 @@
         .module('GisApp.ngMaps')
         .directive('ngMaps', NgMaps);
 
-    // NgMaps.$inject = ['dependencies'];
+    NgMaps.$inject = [];
 
     /* @ngInject */
     function NgMaps(NgMap) {
@@ -29,6 +29,8 @@
     function NgMapsCtrl(NgMap, $scope) {
         var vm = this;
         vm.toggleTraffic = toggleTraffic;
+        vm.toggleCleanMap = toggleCleanMap;
+        vm.showLayer = false;
         vm.styles = [{
             featureType: 'poi',
             elementType: 'labels',
@@ -43,6 +45,14 @@
             addTraffic();
         }
 
+        function toggleCleanMap() {
+            vm.showLayer = !vm.showLayer;
+            if (vm.showLayer && vm.options.heatMap !== undefined) {
+                cleanMapHeatMap();
+            } else if (vm.options.heatMap !== undefined) {
+                addHeatMap(vm.options.heatMap);
+            }
+        }
         function toggleTraffic() {
             if (vm.trafficLayer.getMap() === null) {
                 addTraffic();
@@ -60,6 +70,18 @@
             });
         }
 
+        function addHeatMap(key) {
+            NgMap.getMap().then(function(map) {
+                gapi.client.load('fusiontables', 'v1', function() {
+                    var query = 'select col1 from ' + key;
+                    var request = gapi.client.fusiontables.query.sqlGet({sql: query});
+                    request.execute(function(response) {
+                        onDataFetched(response, map);
+                    });
+                });
+            });
+        }
+
         $scope.$watch('vm.options', function(newNames, oldNames) {
             if (newNames !== undefined) {
 
@@ -72,15 +94,7 @@
                         oldNames.heatMap = undefined;
                     }
                     if (newNames.heatMap !== oldNames.heatMap) {
-                        NgMap.getMap().then(function(map) {
-                            gapi.client.load('fusiontables', 'v1', function() {
-                                var query = 'select col1 from ' + newNames.heatMap;
-                                var request = gapi.client.fusiontables.query.sqlGet({sql: query});
-                                request.execute(function(response) {
-                                    onDataFetched(response, map);
-                                });
-                            });
-                        });
+                        addHeatMap(newNames.heatMap);
                     }
                 }
 
