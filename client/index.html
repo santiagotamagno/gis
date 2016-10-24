@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <base href="/">
-    <title>Gis App</title>
+    <title>Mapa Interactivo</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- build:css(client) app/vendor.css -->
@@ -74,5 +74,14 @@
           <!-- endinjector -->
         <!-- endbuild -->
         <script src="bower_components/ngmap/build/scripts/ng-map.js"></script>
-        <script src="https://maps.google.com/maps/api/js?key=AIzaSyC820SFIMoGBtRAqg2EdIwWwoKPy_7uFdQ"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC820SFIMoGBtRAqg2EdIwWwoKPy_7uFdQ&libraries=visualization"
+         type="text/javascript"></script>
+
+        <script type="text/javascript">
+        function ftOnLoadClientApi() {
+            gapi.client.setApiKey('AIzaSyCbtogHtZ27zcbxdwJWjsIZKIZ_MFTaWcE');
+        }
+        </script>
+        <script type="text/javascript" src="https://apis.google.com/js/client.js?onload=ftOnLoadClientApi">
+        </script>
 </html>

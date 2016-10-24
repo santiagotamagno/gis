@@ -61,7 +61,10 @@
         "browser": false,
         "element": false,
         "by": false,
-        "isMobile": false
+        "isMobile": false,
+        "gapi": false,
+        "google": false,
+        "heatmap": false
     },
     "predef": [
     "protractor",

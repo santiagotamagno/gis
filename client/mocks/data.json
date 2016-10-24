@@ -8,14 +8,21 @@
         "title": "Barrios",
         "description": "El mapa contiene las delimitaciones, nombre e información de los barrios.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/urbanismo/barrios.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLck1LcjRmU1ZTM3M",
         "zoom": 15
       },
       {
         "title": "Ciclovías",
         "description": "Mapa que contiene las ciclovías protegidas (bicisendas) finalizadas, en obra y proyectadas. Contiene además las bicicleterias y talleres.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/urbanismo/ciclovias.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLcnp6WWdQd3Z4UzQ",
+        "zoom": 15
+      },
+      {
+        "title": "Espacios Verdes",
+        "description": "Mapa que contiene los espacios verdes de la ciudad.",
+        "icon": "",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLTDZKeWxsVkNQZlk",
         "zoom": 15
       }
     ]
@@ -29,35 +36,35 @@
         "title": "Comisarías y Bomberos",
         "description": "Mapa que contiene información de comisarías de la policía federal, secciones policiales y cuarteles de bomberos.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/comisarias-y-bomberos.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLek4yVEdKd0dvVmc",
         "zoom": 15
       },
       {
         "title": "Servicios Sociales",
         "description": "Mapa que contiene información de Casas de Niños y Adolescentes, Casas Jóvenes, Centros Comunitarios, Centros de Acción Familiar, Centros de Atención de Mujeres, Centros Integrales, sedes y áreas de Defensorías de Niños, Hogares de Atención Integral, Hogares de Día y Permanentes para la Tercera Edad, Jardines Maternales, Juegotecas Barriales y de Gestión Asociada, Paradores Nocturnos y la Dirección General de la Tercera Edad.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/servicios-sociales.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLV2NLTU1XOVIwT1E",
         "zoom": 15
       },
       {
         "title": "Arquidiócesis",
         "description": "El plano Eclesiástico de la Arquidiócesis de Villa María contiene información de curias eclesiásticas, vicarías episcopales, parroquias, basílicas, santuario, iglesias, capillas, y establecimientos de educación ubicados en la ciudad.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/arquidiocesis.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLZmpMT1g1RFUyNXc",
         "zoom": 15
       },
       {
         "title": "Bancos",
         "description": "Mapa que contiene información de entidades bancarias en la ciudad.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/bancos.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLVkxoV0hyTHQtOUk",
         "zoom": 15
       },
       {
         "title": "Estaciones de Servicio",
         "description": "Mapa que incluye las estaciones de servicio de la ciudad.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/servicios/estaciones-de-servicio.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLeVQ3eFRwcGlxbTg",
         "zoom": 15
       }
     ]
@@ -71,14 +78,21 @@
         "title": "Información Hospitalaria",
         "description": "Mapa que contiene información de hospitales, centros médicos barriales, centros de salud y acción comunitaria y áreas hospitalarias.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/salud/informacio-hospitalaria.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLd2NMaWtlNzlOU0k",
+        "zoom": 15
+      },
+      {
+        "title": "Centros de Atención Primarias",
+        "description": "Mapa que contiene las ubicaciones de los Centros de Atención Primarias de la ciudad.",
+        "icon": "",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLYmdFT1VmUWc4QXM",
         "zoom": 15
       },
       {
         "title": "Farmacias",
         "description": "Mapa que contiene información de farmacias en la ciudad.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/salud/farmacias.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLT0ZEak9mM1k3Qk0",
         "zoom": 15
       }
     ]
@@ -92,49 +106,49 @@
         "title": "Estudios Universitarios",
         "description": "Mapa que contiene información de instituciones de Estudios Universitarios.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/universitarios.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLWktwUHhZdXNyd28",
         "zoom": 15
       },
       {
         "title": "Estudios Terciarios",
         "description": "Mapa que contiene información de instituciones de Estudios Terciarios.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/terciarios.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLOHhJUFRZRFNXTXc",
         "zoom": 15
       },
       {
         "title": "Estudios Secundarios",
         "description": "Mapa que contiene información de instituciones de Estudios Secundarios.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/secundarios.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLZFBoMmljZk8xQ1E",
         "zoom": 15
       },
       {
         "title": "Estudios Primarios",
         "description": "Mapa que contiene información de instituciones de Estudios Primarios.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/primarios.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLeFBsSzhMOWdNTHc",
         "zoom": 15
       },
       {
         "title": "Educación Pre-Primaria",
         "description": "Mapa que contiene información de instituciones de Educación Pre-Primaria.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/pre-primaria.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLTjFRZUpVVUdwYzA",
         "zoom": 15
       },
       {
         "title": "Estudios de Posgrado",
         "description": "Mapa que contiene información de instituciones de Estudios de Posgrado.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/posgrado.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLcGpnUk55aG5ucnM",
         "zoom": 15
       },
       {
         "title": "Formación Artística y Cultural",
         "description": "Mapa que contiene información de instituciones de Formación Artística y Cultural.kmz.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/educacion/cultural.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLbTd5TGVRYU1WWFU",
         "zoom": 15
       }
     ]
@@ -148,21 +162,21 @@
         "title": "Esparcimiento",
         "description": "Mapa que contiene información de centros comerciales, actividades para chicos, centros de recreación, polideportivos, pubs y discotecas.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/esparcimiento/esparcimiento.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLc3pMNEtKLTNjVnc",
         "zoom": 15
       },
       {
         "title": "Gastronomía",
         "description": "Mapa que contiene información de restaurantes y locales gastronómicos.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/esparcimiento/gastronomia.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLNDVGQ0RKa3EwOTg",
         "zoom": 15
       },
       {
         "title": "Sedes Deportivas",
         "description": "Mapa que contiene información de clubes, clubes de barrio, federaciones, polideportivos y estadios en la ciudad.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/esparcimiento/sedes-deportivas.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLdDRLdVpXbUlhZ0E",
         "zoom": 15
       }
     ]
@@ -176,21 +190,21 @@
         "title": "Agencias de Viajes",
         "description": "Mapa que contiene información de Agencias de Viajes en la ciudad.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/turismo/agencias.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLUHcxc2MtMDU1Xzg",
         "zoom": 15
       },
       {
         "title": "Alojamientos",
         "description": "Mapa que contiene información turística de Alojamientos.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/turismo/alojamientos.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLdEZFSW1YTUVTWnc",
         "zoom": 15
       },
       {
         "title": "Información Turística",
         "description": "Mapa que contiene información de Centros de Informes.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/turismo/informacion.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLdlo1QVZCU2RCa2c",
         "zoom": 15
       }
     ]
@@ -204,43 +218,64 @@
         "title": "Bibliotecas y Archivos",
         "description": "Mapa que contiene información de las bibliotecas y archivos de la ciudad.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/cultura/bibliotecas.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLdXlMbkFBZ2tDdGM",
         "zoom": 15
       },
       {
         "title": "Centro Culturales",
         "description": "Mapa que contiene información de los centros culturales de la ciudad.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/cultura/centros.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLZHhsamNRSG14WWs",
         "zoom": 15
       },
       {
         "title": "Museos",
         "description": "Mapa que contiene información de museos de la ciudad.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/cultura/museos.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLdU1qZERJbzJsbmM",
         "zoom": 15
       },
       {
         "title": "Periódicos",
         "description": "Mapa que contiene la información de los periódicos de la ciudad.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/cultura/periodicos.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLdE1yU01JN2o2Vzg",
         "zoom": 15
       },
       {
         "title": "Espacios Escénicos",
         "description": "Mapa que contiene información de los teatros, salas de música, danza y circo de la ciudad.",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/cultura/espacios.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLdjgxejBFNUppMU0",
         "zoom": 15
       },
       {
         "title": "Radios y Television",
         "description": "Mapa que contiene información de las emisoras de televisión local y radio (AM/FM) local",
         "icon": "",
-        "kml": "https://gis-villamaria.herokuapp.com/kmz/cultura/emisoras.kmz",
+        "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLMW45dExSRmY5Q1E",
         "zoom": 15
+      }
+    ]
+  },
+  {
+    "title": "Mapas de Calor",
+    "description": "Mapas descriptivos de diferentes situaciones de la ciudad.",
+    "icon": "",
+    "sections": [
+      {
+        "title": "Accidentes de tránsito",
+        "description": "El mapa contiene las información referente a los accidentes de tránsito.",
+        "icon": "",
+        "heatMap": "tPDzIweDkHWrmzpsgRqleYLezTS9q9fZ_Loj2VMn",
+        "zoom": 13
+      },
+      {
+        "title": "Actas labradas",
+        "description": "Mapa que contiene información de las actas labradas en la ciudad.",
+        "icon": "",
+        "heatMap": "tPDzIweDkHWrmzpsgRqleYLezTS9q9fZ_Loj2VMn",
+        "zoom": 13
       }
     ]
   }
