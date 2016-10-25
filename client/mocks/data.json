@@ -1,5 +1,33 @@
 [
   {
+    "title": "Mapas de Calor",
+    "description": "Mapas descriptivos de diferentes situaciones de la ciudad.",
+    "icon": "",
+    "sections": [
+      {
+        "title": "Accidentes de Tránsito Registrados",
+        "description": "Mapa que contiene información de los accidentes registrados en la ciudad.",
+        "icon": "",
+        "heatMap": "16tj-qCegNBXEidIzkgGUgtwNNWoaM4qTMIwHfbNB",
+        "zoom": 14
+      },
+      {
+        "title": "Infracciones de Tránsito Labradas",
+        "description": "Mapa que contiene información de las infracciones de tránsito labradas en la ciudad.",
+        "icon": "",
+        "heatMap": "1ike9Jc69fUtrD_tt9vXZmgsNKEdrBSDatE4KFWND",
+        "zoom": 14
+      },
+      {
+        "title": "Actas Policiales Labradas",
+        "description": "Mapa que contiene información de las actas policiales labradas en la ciudad.",
+        "icon": "",
+        "heatMap": "1841MgCkKLNv5NrDip0wvfdlGavyTRkLLWG4yTwwP",
+        "zoom": 14
+      }
+    ]
+  },
+  {
     "title": "Urbanismo",
     "description": "Barrios, Pleaneamiento, Red Vial, Ciclovías, etc.",
     "icon": "",
@@ -255,27 +283,6 @@
         "icon": "",
         "kml": "https://docs.google.com/uc?export=download&id=0B-YNTfjhhylLMW45dExSRmY5Q1E",
         "zoom": 15
-      }
-    ]
-  },
-  {
-    "title": "Mapas de Calor",
-    "description": "Mapas descriptivos de diferentes situaciones de la ciudad.",
-    "icon": "",
-    "sections": [
-      {
-        "title": "Accidentes de tránsito",
-        "description": "El mapa contiene las información referente a los accidentes de tránsito.",
-        "icon": "",
-        "heatMap": "1tPDzIweDkHWrmzpsgRqleYLezTS9q9fZ_Loj2VMn",
-        "zoom": 13
-      },
-      {
-        "title": "Actas labradas",
-        "description": "Mapa que contiene información de las actas labradas en la ciudad.",
-        "icon": "",
-        "heatMap": "1tPDzIweDkHWrmzpsgRqleYLezTS9q9fZ_Loj2VMn",
-        "zoom": 13
       }
     ]
   }
