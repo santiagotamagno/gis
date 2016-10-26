@@ -8,21 +8,21 @@
         "title": "Accidentes de Tránsito Registrados",
         "description": "Mapa que contiene información de los accidentes registrados en la ciudad.",
         "icon": "",
-        "heatMap": "16tj-qCegNBXEidIzkgGUgtwNNWoaM4qTMIwHfbNB",
+        "heatMap": "1_b07LMGDn6PtBYEsrOEQV8NkJiS2dGiMnzC1ZyU-",
         "zoom": 14
       },
       {
         "title": "Infracciones de Tránsito Labradas",
         "description": "Mapa que contiene información de las infracciones de tránsito labradas en la ciudad.",
         "icon": "",
-        "heatMap": "1ike9Jc69fUtrD_tt9vXZmgsNKEdrBSDatE4KFWND",
+        "heatMap": "1tPDzIweDkHWrmzpsgRqleYLezTS9q9fZ_Loj2VMn",
         "zoom": 14
       },
       {
         "title": "Actas Policiales Labradas",
         "description": "Mapa que contiene información de las actas policiales labradas en la ciudad.",
         "icon": "",
-        "heatMap": "1841MgCkKLNv5NrDip0wvfdlGavyTRkLLWG4yTwwP",
+        "heatMap": "1XTeS-LYM1vqZcoRcZLIOuT40oEDPnpGHR4AadVHB",
         "zoom": 14
       }
     ]
