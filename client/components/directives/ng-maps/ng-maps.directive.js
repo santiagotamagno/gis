@@ -29,8 +29,10 @@
     function NgMapsCtrl(NgMap, $scope) {
         var vm = this;
         vm.toggleTraffic = toggleTraffic;
-        vm.toggleCleanMap = toggleCleanMap;
-        vm.showLayer = false;
+        
+        vm.showLayer = true;
+        vm.showTraffic = true;
+
         vm.styles = [{
             featureType: 'poi',
             elementType: 'labels',
@@ -39,36 +41,50 @@
                 }]
         }];
 
-        activate();
+        NgMap.getMap().then(function(map) {
+            vm.map = map;
+            vm.trafficLayer = new google.maps.TrafficLayer();
+            vm.trafficLayer.setMap(map);
+        });
 
-        function activate() {
-            addTraffic();
-        }
 
-        function toggleCleanMap() {
-            vm.showLayer = !vm.showLayer;
-            if (vm.showLayer && vm.options.heatMap !== undefined) {
-                cleanMapHeatMap();
-            } else if (vm.options.heatMap !== undefined) {
-                addHeatMap(vm.options.heatMap);
-            }
-        }
         function toggleTraffic() {
-            if (vm.trafficLayer.getMap() === null) {
-                addTraffic();
-            } else {
-                vm.trafficLayer.setMap(null);
-                vm.isCheckedTraffic = false;
-            }
+            vm.trafficLayer.setMap(vm.trafficLayer.getMap() ? null : vm.map);
+            vm.showTraffic = (vm.showTraffic ? true : false);
         }
 
-        function addTraffic() {
-            NgMap.getMap().then(function(map) {
-                vm.trafficLayer = new google.maps.TrafficLayer();
-                vm.trafficLayer.setMap(map);
-                vm.isCheckedTraffic = true;
-            });
+        function toggleLayer() {
+            vm.showLayer = (vm.showLayer ? true : false);
+            // vm.heatmap.setMap(vm.heatmap.getMap() ? null : vm.map);
         }
+
+
+        $scope.$watch('vm.options', function(newNames, oldNames) {
+            if (newNames !== undefined) {
+
+                //Fusion tables && heatMap
+                if (_.has(newNames, 'heatMap') && newNames.heatMap !== undefined) {
+
+
+                    //check equals heapmap
+                    if (oldNames === undefined) {
+                        oldNames = {};
+                        oldNames.heatMap = undefined;
+                    }
+                    if (newNames.heatMap !== oldNames.heatMap) {
+                        cleanMapHeatMap();
+                        addHeatMap(newNames.heatMap);
+                    }
+                }
+
+                //poi
+                if (_.has(newNames, 'kml') && newNames.kml !== undefined) {
+                    cleanMapHeatMap();
+                }
+
+            }
+        });
+
 
         function addHeatMap(key) {
             NgMap.getMap().then(function(map) {
@@ -81,30 +97,6 @@
                 });
             });
         }
-
-        $scope.$watch('vm.options', function(newNames, oldNames) {
-            if (newNames !== undefined) {
-
-                //Fusion tables && heatMap
-                if (_.has(newNames, 'heatMap') && newNames.heatMap !== undefined) {
-
-                    //check equals heapmap
-                    if (oldNames === undefined) {
-                        oldNames = {};
-                        oldNames.heatMap = undefined;
-                    }
-                    if (newNames.heatMap !== oldNames.heatMap) {
-                        addHeatMap(newNames.heatMap);
-                    }
-                }
-
-                //poi
-                if (_.has(newNames, 'kml') && newNames.kml !== undefined) {
-                    cleanMapHeatMap();
-                }
-
-            }
-        });
 
         function cleanMapHeatMap() {
             if (vm.heatmap !== undefined) {
@@ -159,23 +151,28 @@
         }
 
         function drawHeatmap(locations, map) {
+            console.log(locations.length);
             vm.heatmap = new google.maps.visualization.HeatmapLayer({
                 dissipating: true,
-                gradient: [
-                  'rgba(102,255,0,0)',
-                  'rgba(147,255,0,1)',
-                  'rgba(193,255,0,1)',
-                  'rgba(238,255,0,1)',
-                  'rgba(244,227,0,1)',
-                  'rgba(244,227,0,1)',
-                  'rgba(249,198,0,1)',
-                  'rgba(255,170,0,1)',
-                  'rgba(255,113,0,1)',
-                  'rgba(255,57,0,1)',
-                  'rgba(255,0,0,1)'
+                /* gradient: [
+                    'rgba(0, 255, 255, 0)',
+                    'rgba(0, 255, 255, 1)',
+                    'rgba(0, 191, 255, 1)',
+                    'rgba(0, 127, 255, 1)',
+                    'rgba(0, 63, 255, 1)',
+                    'rgba(0, 0, 255, 1)',
+                    'rgba(0, 0, 223, 1)',
+                    'rgba(0, 0, 191, 1)',
+                    'rgba(0, 0, 159, 1)',
+                    'rgba(0, 0, 127, 1)',
+                    'rgba(63, 0, 91, 1)',
+                    'rgba(127, 0, 63, 1)',
+                    'rgba(191, 0, 31, 1)',
+                    'rgba(255, 0, 0, 1)'
                 ],
+                */
                 opacity: 0.79,
-                radius: 33,
+                radius: 30,
                 data: locations
             });
             cleanMapHeatMap();
