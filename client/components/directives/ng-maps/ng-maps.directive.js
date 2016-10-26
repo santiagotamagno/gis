@@ -29,7 +29,6 @@
     function NgMapsCtrl(NgMap, $scope) {
         var vm = this;
         vm.toggleTraffic = toggleTraffic;
-        
         vm.showLayer = true;
         vm.showTraffic = true;
 
@@ -47,7 +46,6 @@
             vm.trafficLayer.setMap(map);
         });
 
-
         function toggleTraffic() {
             vm.trafficLayer.setMap(vm.trafficLayer.getMap() ? null : vm.map);
             vm.showTraffic = (vm.showTraffic ? true : false);
@@ -58,13 +56,11 @@
             // vm.heatmap.setMap(vm.heatmap.getMap() ? null : vm.map);
         }
 
-
         $scope.$watch('vm.options', function(newNames, oldNames) {
             if (newNames !== undefined) {
 
                 //Fusion tables && heatMap
                 if (_.has(newNames, 'heatMap') && newNames.heatMap !== undefined) {
-
 
                     //check equals heapmap
                     if (oldNames === undefined) {
@@ -84,7 +80,6 @@
 
             }
         });
-
 
         function addHeatMap(key) {
             NgMap.getMap().then(function(map) {
