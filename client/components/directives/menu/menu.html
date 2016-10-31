@@ -18,8 +18,8 @@
                     <div ng-repeat="val in value.sections" ng-click="vm.setKml(val.kml, value.title, val.title, val.zoom, val.heatMap)">
                         <a href="#" class="list-group-item {{vm.colors[$index]}}" ng-class="{'active': val.title == vm.states.title}">
                             <!-- <span>{{::val.icon}}</span> -->
-                            <span>{{::val.title}}</span>
-                            <!-- <span>{{::val.description}}</span> -->
+                            <strong><span>{{::val.title}}</span></strong></br>
+                            <span>{{::val.description}}</span>
                         </a>
                     </div>
                 </div>
